@@ -1,0 +1,27 @@
+p, li, .usa-intro {
+  line-height: 1.5;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+/* system token 18, ~80px */
+.custom-font-size-18 {
+  font-size: 5rem !important; 
+}
+
+/* system token 17, ~64px */
+.custom-font-size-17 {
+  font-size: 4rem !important; 
+}

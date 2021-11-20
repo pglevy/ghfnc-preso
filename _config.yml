@@ -1,0 +1,21 @@
+# Set a plain language title for the site.
+title: Bixal Presentation Template
+
+# Write a short description for the site. This is used for "meta description."
+description: A template for creating web-based presentation slides using USWDS and Bixal branding
+
+# Set the language for the site. Used for "html lang." Default is English.
+lang: en
+
+# Avoid GitHub API authentication when building locally. (Not working)
+github: [metadata]
+
+# Enable for live hosting on GitHub Pages
+baseurl: /presentation-template
+
+# Remove generation of additional style.css
+theme: null
+
+collections:
+  slides:
+    output: true

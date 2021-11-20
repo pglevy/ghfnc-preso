@@ -1,0 +1,13 @@
+<section class="bg-bixal-{{ slide.background-color }}">
+    <a name="{{ slide.title | slugify }}"></a>  
+    <div class="grid-container tablet:font-body-lg desktop:font-body-xl bixal-font-serif text-bixal-{{ slide.text-color }}">
+        <div class="height-viewport display-flex flex-column flex-justify-center">
+            <h1 class="custom-font-size-18 line-height-3 text-ls-1 margin-bottom-0">{{ slide.title }}</h1>
+            <div class="bixal-font-sans-serif text-semibold">
+                {{ slide.content }}
+            </div>
+            <img src="{{ site.baseurl }}/assets/img/Bixal_Logo_{{ slide.logo-color }}.png" alt="" class="maxw-card position-absolute bottom-3">
+        </div>
+    </div>
+    <img src="{{ site.baseurl }}/assets/img/b-orange.svg" alt="" class="z-100 position-absolute right-3 top-neg-3 margin-top-neg-3 maxw-card-lg"> 
+</section>

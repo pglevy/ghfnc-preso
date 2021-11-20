@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="{{site.lang}}">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl}}/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl}}/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl}}/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.baseurl}}/site.webmanifest">
+  <link rel="mask-icon" href="{{ site.baseurl}}/safari-pinned-tab.svg" color="#7D0096">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/js/uswds-init.min.js" integrity="sha512-CERRusk3iiaHwELaoxK7Q70UHH6ifSJKSrq3Cfk/TsZooDq7sJYsRCPLdP3YMnTfr3LoeTALPlkpC6g+F6w1Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/css/uswds.min.css" integrity="sha512-wICx8of+w4Nz/tYsj4B6rYxkrkgOH8zJ7bcyaShiM7jMPtDVZGcMQz7EDaBIqpxu9XGvtR7RKeSj3Zp5pGrISQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.typekit.net/knn2htr.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bixal/brand-css@v2.1/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bixal/brand-css@v2.1/utilities-for-uswds.css" />
+  <link rel="stylesheet" href="{{ site.baseurl}}/assets/css/custom.css" />
+</head>
+
+<body>
+  <main id="main-content">
+    {% if page.title == "Notes" %}
+      {% include presenter-notes.html %}
+    {% else %}
+      {% for slide in site.slides %}
+      {% assign next_i = forloop.index0 | plus: 1 %}
+        {% if slide.template == "text" %}
+          {% include template-text.html %}
+        {% elsif slide.template == "title" %}
+          {% include template-title.html %}
+        {% elsif slide.template == "subtitle" %}
+          {% include template-subtitle.html %}
+        {% elsif slide.template == "blockquote" %}
+          {% include template-blockquote.html %}
+        {% elsif slide.template == "text-with-image-bg" %}
+          {% include template-text-with-image-bg.html %}
+        {% elsif slide.template == "image-with-link" %}
+          {% include template-image-with-link.html %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </main> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/js/uswds.min.js" integrity="sha512-0I5hS86ISi9DRRJgArVIUFaI0fUpdxGppKIc6Dkl3NkdSNLwR2523QvMADILsfE1yK+nKbWuGDx+99+Fop3IgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
