@@ -1,92 +1,99 @@
-# Bixal Presentation Template
+# GitHub for no-coders presentation
 
-The purpose of this project is to enable Bixalers to create presentation content using a webpage instead of tools like Google Slides or PowerPoint.
+![Laptop on a wooden table showing the GitHub website](assets/img/github-homepage-on-laptop.jpg)
 
-**[View templates and example content](https://bixal.github.io/presentation-template/)**
+This presentation is an exploration of the features and benefits of GitHub for no-code uses. Compiled by @pglevy as part of the Makerpad No-Code Fundamentals course, cohort 4.
 
-Why would you want to do this? Here are a few reasons:
+## Outline
 
-- Inherently more accessible and responsive
-- Robust version control and collaboration tools with GitHub
-- Better separation of content and presentation
-- More open and shareable
-- More fun
+Here's an overview of the slide content and links.
 
-## Features
+### Agenda
+- Why GitHub
+- What it offers
+- When to consider
+- What do to do next
 
-- Built on the U.S. Web Design System
-- Includes common templates
-    - Title
-    - Subtitle
-    - Blockquote
-    - Text
-    - Image with link
-    - Text with image background
-- Uses Bixal brand fonts and colors
-    - Novel Pro and Proxima Nova typefaces
-    - External CSS referencing [brand colors](https://cdn.jsdelivr.net/gh/bixal/brand-css@v2.1/style.css)
-    - USWDS-style [utility classes](https://cdn.jsdelivr.net/gh/bixal/brand-css@v2.1/utilities-for-uswds.css) to apply brand colors to different elements
-- Example slides
-- Automatic slide count and next slide links
-- Presenter notes available on the [`/notes/`](https://bixal.github.io/presentation-template/notes/) page of your site.
+### A little about me
 
-## How to
+- Early web nerd
+- Roundabout route to UX Design
+- Head of Design at [Bixal](https://www.bixal.com/)
 
-Navigate to the `_slides` folder to edit or add slides.
+Follow me on [Twitter](https://twitter.com/pglevy)!
 
-### Understand the code
+### Bixal
 
-Within the files, there are two distinct sections.
+A civic tech firm working with the U.S. federal government to improve digital services.
 
-- **Front matter**: the text **between** a pair of dashes. This is where the majority of your slide styling occurs.
-- **Content**: the text **underneath** the dashes. This is the main content, or "body", of your slide.
+### Why it’s relevant
 
-![Screencast of annotations on a code snippet distinguishing between its two main sections.](https://user-images.githubusercontent.com/52218695/134966615-38bce667-12f0-4bb3-b928-1928d32ffd1b.png)
+- The #buildinpublic O.G.
+- DeCo: decentralized code and content
+- Bundling of project management, documentation, and knowledge sharing tools
 
-### Add a title
+### Free
 
-- Titles can be added to the `title` term and will appear as top-level headings.
-- Titles will not appear on the slides with the "blockquote" template, but it's best to have a title for consistency and traceability. 
+*Oh, and did I mention you can do most everything you need to do for free?*
 
-### Change color
+*—[GitHub Pricing](https://github.com/pricing)*
 
-- You can apply color to the `text-color` and `background-color` terms by simply plugging in a color from Bixal's branding options:
-  - orange
-  - green
-  - light-blue
-  - teal
-  - red
-  - maroon
-  - purple
-  - navy
+### Tracking work
 
-### Add images
+- [Project boards](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
+    - [Notes](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/tracking-work-with-project-boards/adding-notes-to-a-project-board) for lightweight tasks
+    - [Issues](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/tracking-work-with-project-boards/adding-issues-and-pull-requests-to-a-project-board) for more robust features
+- [New project experience](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects) in beta
+- Examples:
+    - [Rapid Response Team](https://github.com/Bixal/rapid-response-team/projects?query=is%3Aclosed)
+    - [#MPNC4](https://github.com/pglevy/mpnc4/projects?query=is%3Aclosed)
+    - [U.S. Web Design System](https://github.com/orgs/uswds/projects/1)
 
+### Marking progress
 
-If you're uploading an image, go to [/assets/img](/assets/img) in your repository and press the `Add file` button.
+- [Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) for grouping related work
+- [Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) for documenting updates
+- Examples:
+    - [Rapid Response Team](https://github.com/Bixal/rapid-response-team/milestones?state=closed)
+    - [Bixal Methods](https://github.com/Bixal/methods/releases)
+    - [U.S. Web Design System](https://github.com/uswds/uswds/releases/tag/v2.12.2)
 
-- Use the "text-with-image-bg" template if you're intending to use an image as a background image.
-  - Add the image file name or image URL to the `bg-image` term.
-- Use the "image-with-link" template if you're intending to set context with images and links. 
-  - Add the image file name or image URL to the `image-source` term.
-  - Make sure to include the appropriate image information to the `link` and `image-alt-text` terms!
+### Documenting and sharing
 
-#### Rearrange the text or image
+- [README](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+    - Example: [USWDS Screener Prototyping Tool](https://github.com/Bixal/uswds-screener-prototyping-tool#readme)
+- [Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+    - Example: [Rapid Response Team](https://github.com/Bixal/rapid-response-team/wiki)
+- Built-in blogging with [GitHub Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/)
 
-- To change which side you want the text to be on, include the following term:
-  - `text-order:` (first or last) 
-- To change which part of an image you want to appear on the slide, include the following term:
-  - `image-alignment:` (left or right)
+### Community and collaboration
 
-### Add presenter notes
+- [Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions)
+    - Example: [Rapid Response Team Ideas](https://github.com/Bixal/rapid-response-team/discussions/categories/ideas)
+- [Collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+- [Community standards](https://docs.github.com/en/communities)
+    - Example: [U.S. Web Design System](https://github.com/uswds/uswds/community)
+- Advanced: [version control with git](https://docs.github.com/en/get-started/using-git/about-git)
+    - My [YouTube video](https://www.youtube.com/watch?v=Yvu4uoE1fVo&t=10s) on getting started
 
-- Presenter notes can be added to the `notes` term and will only be seen by the presenter.
-- They can be accessed through the `/notes/` page of your site (i.e. bixal.github.io/presentation-template/notes/)
+### When to consider
 
-### Order your slides
+- Working with devs who are already using it
+- Simple, free way to build in public
+    - Create a homebase to reference your other work
+    - Maintain full control over your content
+- More advanced version control of content
 
-How you name your slides will determine the order they will appear.
+### Next steps
 
-- Your files will automatically be sorted alphabetically.
-- You can control the order by adding numeric values to the front of your slide's file name (i.e. 1, 1.1, 1.2, 2, 2.4, 3, etc.). 
-- The lowest value will appear first and the highest value will appear last.
+1. Create an account
+1. Poke around
+1. Glance at my [glossary](https://github.com/Bixal/methods/wiki/GitHub-glossary)
+1. Learn [Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+1. Subscribe to my newsletter!
+
+## About this template
+
+The purpose of this template is to enable [Bixalers](https://www.bixal.com/) to create presentation content using a webpage instead of tools like Google Slides or PowerPoint.
+
+Get [more information about this template](https://github.com/Bixal/presentation-template#readme) and how to use it or check out some [slide layouts and example content](https://bixal.github.io/presentation-template/).
