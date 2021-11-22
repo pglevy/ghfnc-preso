@@ -2,7 +2,7 @@
 
 ![Laptop on a wooden table showing the GitHub website](assets/img/github-homepage-on-laptop.jpg)
 
-This presentation is an exploration of the features and benefits of GitHub for no-code uses. Compiled by @pglevy as part of the Makerpad No-Code Fundamentals course, cohort 4.
+This presentation is an exploration of the features and benefits of GitHub for no-code uses. Compiled by [@pglevy](https://github.com/pglevy) as part of the Makerpad No-Code Fundamentals course, cohort 4.
 
 ## Outline
 
@@ -12,7 +12,7 @@ Here's an overview of the slide content and links.
 - Why GitHub
 - What it offers
 - When to consider
-- What do to do next
+- What to do next
 
 ### A little about me
 
@@ -90,7 +90,7 @@ A civic tech firm working with the U.S. federal government to improve digital se
 1. Poke around
 1. Glance at my [glossary](https://github.com/Bixal/methods/wiki/GitHub-glossary)
 1. Learn [Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-1. Subscribe to my newsletter!
+1. [Subscribe to my newsletter!](https://www.getrevue.co/profile/pglevy)
 
 ## About this template
 
